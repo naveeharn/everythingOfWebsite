@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17_semantictags</title>
+
+    <style>
+        /* Semantic Tag instead div Tag */
+        /* 
+        <article>   <aside      <details>   <figcaption>    <figure>
+        <footer>    <header>    <main>      <mark>          <nav>
+        <section>   <summary>   <time>
+         */
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            padding: 0px;
+            list-style: none;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+        }
+        #header{
+            margin-bottom: 15px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        #main{
+            float: left;
+            width: 69%;
+        }
+        #sidebar{
+            float: right;
+            width: 29%;
+        }
+        .clr{
+            clear: both;
+        }
+        #footer{
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        .text-center{
+            display: block;
+            text-align: center;
+        }
+        .card{
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="card" id="header">
+        <h1>ComputerLab</h1>
+        <p>Beyond the Limit</p>
+    </header>
+
+    
+
+    <!-- Main Context -->
+    <main id="main">
+
+        <!-- Welcome Section -->
+        <section class="card" id="welcome">
+            <h2>Welcome to Website developed by HTML5</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita porro nesciunt amet! Saepe
+                veniam fugiat ea pariatur delectus! Perspiciatis at dolore in repellendus reiciendis dolores quisquam
+                ab, deleniti tenetur perferendis dolorum modi fugiat, debitis ut, quod sit aliquid quae placeat. Vero
+                tempora labore aut nulla quod magni tenetur quibusdam.<br>
+                <br>
+                <a href="#" class="text-center">Fanpage</a>
+                <a href="#" class="text-center">Youtube</a>
+            </p>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Article</h2>
+
+            <!-- First Article -->
+            <article class="article">
+                <h3>First Article</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorum neque eveniet in enim! Id
+                    officiis, odio illo esse accusamus sit numquam ratione temporibus exercitationem qui ducimus
+                    voluptates expedita repellendus dolorum dignissimos porro est laudantium neque? Cum, dolorum quis
+                    cumque reiciendis consequatur corporis. Molestias, placeat voluptate aut illum itaque velit? <br>
+                    <a href="#">more</a>
+                </p>
+            </article>
+
+            <!-- Second Article -->
+            <article class="article">
+                <h3>Second Article</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est magni nobis suscipit eligendi placeat
+                    minima aliquam! Voluptatum magni, vero ratione nesciunt eveniet sed nihil eum ea nam aliquam,
+                    possimus vel quod quam? Explicabo commodi, doloremque sed, laboriosam dolores ipsum soluta veniam
+                    est numquam tempore dolorum totam dignissimos, inventore beatae nulla. <br>
+                    <a href="#">more</a>
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Sidebar Section -->
+    <aside class="card" id="sidebar">
+        <h3>Menu</h3>
+
+        <!-- Navigation -->
+        <ul id="main-nav">
+            <li><a href="#">Start</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+        </ul>
+        <hr>
+
+        <h3>Contact</h3>
+        <ul>
+            <li><strong>Address : </strong>Ladkrabang Bangkok Thailand</li>
+            <li><strong>Tel : </strong>901-112-1112</li>
+            <li><strong>Email : </strong>computerlab@hotmail.com</li>
+        </ul>
+    </aside>
+
+    <section class="clr"></section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="text-center">
+            Copyright &copy computerLab 2021
+        </p>
+    </footer>
+
+</body>
+
+</html>
