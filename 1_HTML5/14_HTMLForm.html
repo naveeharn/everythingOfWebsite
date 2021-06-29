@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1 align="center">Register Account</h1>
+    <br>
+    <br>
+    <!--  
+        tag in HTML Form
+
+        <input>     : get message only one line
+        <select>    : Drop-Down
+        <option>    : Choice
+        <button>
+        <label>
+        <taxtarea>  : get message many line
+    -->
+    <!-- property of action : sent to server (backend) -->
+    <form action="">
+
+        <h2><em>input tag (type = {text,email,password,number,date,tel,color,range,etc...}),</em></h2>
+        <h2><em>label tag, textarea tag</em></h2>
+        <div>
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" placeholder="input your firstname (A-Z)" required>
+        </div>
+        <br>
+        <div>
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" placeholder="input your lastname (A-Z)" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="input your email account" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="password must be longer 8 characters" required>
+        </div>
+        <br>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="" cols="30" rows="3" placeholder="input your address" required></textarea>
+            <textarea name="address" id="" cols="30" rows="3" readonly>motherfucker</textarea>
+        </div>
+        <br>
+        <div>
+            <label for="age">age</label>
+            <input type="number" name="age" min="0" max="99" value="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="birth">Birth Day</label>
+            <input type="date" name="birth" required>
+        </div>
+        <br>
+        <div>
+            <label for="tel">Teleplone Number</label>
+            <input type="tel" name="tel" placeholder="input your telephone number" required>
+        </div>
+        <br>
+        <div>
+            <label for="color">Theme Color</label>
+            <input type="color" name="color">
+        </div>
+        <br>
+        <div>
+            <label for="range">Range Number</label>
+            <input type="range" name="range" value="5">
+        </div>
+        <br>
+
+        <h2><em>select tag, option tag</em></h2>
+        <div>
+            <label for="level">Level of Education</label>
+            <select name="level" id="" required>
+                <option value="none">None</option>
+                <option value="primary" selected>Primary</option>
+                <option value="secondary">Secondary</option>
+                <option value="university">University</option>
+            </select>
+        </div>
+        <br>
+        <!-- 
+            if atrribute name in radio type is same name
+            then user can choose only one choice in a group of attribute name
+        -->
+        <h2><em>input tag (type = {radio})</em></h2>
+        <br>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">LGBTQ+
+            <input type="radio" name="gender">None
+        </div>
+        <br>
+        <!-- 
+            if atrribute name in check type is same name
+            then user can choose several choice in a group of attribute name
+        -->
+        <h2><em>input tag (type = {checkbox})</em></h2>
+        <br>
+        <div>
+            <label for="hobby">Hobby</label>
+            <input type="checkbox" name="hobby">Programming
+            <input type="checkbox" name="hobby">Gaming
+            <input type="checkbox" name="hobby">Whatching Youtube
+            <input type="checkbox" name="hobby">Sport
+            <input type="checkbox" name="hobby">Reading
+            <input type="checkbox" name="hobby">other
+        </div>
+        <br>
+        <h2><em>input tag (type = {file})</em></h2>
+        <div>
+            <label for="file">Upload File</label>
+            <input type="file" name="file" id="">
+        </div>
+        <br>
+        <h2><em>input tag (type = {url})</em></h2>
+        <div>
+            <label for="file">website</label>
+            <input type="url" name="url" id="">
+        </div>
+        <br>
+        <h2><em>input tag submit type & button tag submit type</em></h2>
+        <div>
+            <input type="submit" value="Create new Account">
+            <button type="submit">Create new Account</button>
+        </div>
+        <br>
+        <h2><em>input tag reset type & button tag reset type</em></h2>
+        <div>
+            <input type="reset" value="Reset All Data">
+            <button type="reset">Reset All Data</button>
+        </div>
+        <br>
+
+    </form>
+</body>
+</html>
