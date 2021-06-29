@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_block&inline</title>
+    <style>
+        /* div{
+            border: 1.5px solid salmon;
+        }
+        span{
+            border: 1.5px solid blueviolet;
+        } */
+        form{
+            border: 1.5px solid blue;
+        }
+        input{
+            border: 2.5px solid goldenrod;
+            /* border-radius: 10px;
+            padding-left: 25px;
+            padding-right: 25px; */
+        }
+    </style>
+    <!--  
+        block   (div)   : full line
+        inline  (span)  : length of line is same length of context
+    -->
+    <!--  
+        block element
+        <address>       <article>   <aside>     <blockquote>    <canvas>
+        <dd>            <div>       <dl>        <dt>            <fieldset>
+        <figcaption>    <figure>    <footer>    <form>          <h1>-<h6>   
+        <header>        <hr>        <li>        <main>          <nav>
+        <noscript>      <ol>        <p>         <pre>           <section>
+        <table>         <tfoot>     <ul>        <video>
+    -->
+    <!--  
+        inline element
+        <a>     <abbr>      <acronym>   <b>         <bdo>
+        <big>   <br>        <button>    <cite>      <code>
+        <dfn>   <em>        <i>         <img>       <input>
+        <kbd>   <label>     <map>       <object>    <output>
+        <q>     <samp>      <script>    <select>    <small>
+        <span>  <strong>    <sub>       <sup>       <textarea>
+        <time>  <tt>        <var>
+
+    -->
+    
+</head>
+<body>
+    <h1>Block and Inline</h1>
+    <br>
+    <span>span_tag</span>
+    <span>span_tag</span>
+    <span>span_tag</span>
+    <div>div_tag</div>
+    <div>div_tag</div>
+    <div>div_tag</div>
+    <br>
+    <form action="">
+
+        <h2><em>input tag (type = {text,email,password,number,date,tel,color,range,etc...}),</em></h2>
+        <h2><em>label tag, textarea tag</em></h2>
+        <div>
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" placeholder="input your firstname (A-Z)" required>
+        </div>
+        <br>
+        <div>
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" placeholder="input your lastname (A-Z)" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="input your email account" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="password must be longer 8 characters" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">age</label>
+            <input type="number" name="age" min="0" max="99" value="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="birth">Birth Day</label>
+            <input type="date" name="birth" required>
+        </div>
+        <br>
+        <div>
+            <label for="tel">Teleplone Number</label>
+            <input type="tel" name="tel" placeholder="input your telephone number" required>
+        </div>
+        <br>
+        <h2><em>select tag, option tag</em></h2>
+        <div>
+            <label for="level">Level of Education</label>
+            <select name="level" id="" required>
+                <option value="none">None</option>
+                <option value="primary" selected>Primary</option>
+                <option value="secondary">Secondary</option>
+                <option value="university">University</option>
+            </select>
+        </div>
+        <br>
+        <h2><em>input tag submit type & button tag submit type</em></h2>
+        <div>
+            <input type="submit" value="Create new Account">
+            <button type="submit">Create new Account</button>
+        </div>
+        <br>
+        <h2><em>input tag reset type & button tag reset type</em></h2>
+        <div>
+            <input type="reset" value="Reset All Data">
+            <button type="reset">Reset All Data</button>
+        </div>
+        <br>
+
+    </form>
+</body>
+</html>
