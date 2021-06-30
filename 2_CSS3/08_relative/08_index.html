@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_relative</title>
+    <link rel="stylesheet" href="08_style.css">
+
+    <style>
+        /* 
+        <th scope="col"><a href="../08_relative/08_index.html" target="_blank">08_relative</a></th>
+        */
+        p {
+            font-size: 100%;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        #div_rem {
+            font-size: 2rem;
+        }
+
+        #div_em {
+            font-size: 40px;
+        }
+
+        div {
+            font-size: 0.75em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Relative Unit CSS3</h1>
+    <p class="message_1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem voluptates iste blanditiis architecto
+        numquam esse, vitae ab quia temporibus voluptatem sit eius itaque perspiciatis, repellat eligendi minus.
+        Dolores, aliquid?
+    </p>
+    <div id="div_rem">div CSS3</div>
+    <div id="div_em">
+        div_em (40px x 0.75 = 30px)
+        <div>
+            div_em (30px x 0.75 = 22.5px)
+            <div>
+                div_em (22.5px x 0.75 = 16.875px)
+                <div>
+                    div_em (16.875px x 0.75 = 12.65625px)
+                </div>
+            </div>
+        </div>
+    </div>
+    <p style="font-size: 12.65625;">font-size: 12.65625px</p>
+</body>
+
+</html>
