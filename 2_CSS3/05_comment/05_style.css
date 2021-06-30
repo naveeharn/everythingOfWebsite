@@ -1,0 +1,10 @@
+/* 
+id="message" set font-style: italic 
+class="title" set color : violet
+*/
+p#message{
+    font-style: italic;
+}
+h1.title{
+    color: violet;
+}
