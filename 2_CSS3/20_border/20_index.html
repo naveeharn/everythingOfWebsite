@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20_border</title>
+    <link rel="stylesheet" href="20_style.css">
+    
+    <style>
+        /* 
+        <th scope="col"><a href="../20_border/20_index.html" target="_blank">20_border</a></th>
+        */
+        /*  
+        border: <type line> <scale> <color>
+        type line   : solid, dotted, dashed
+        scale       : width of line (thicness)
+        color       : red, green, blue, etc...
+        */
+        div{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: auto;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-content: center; */
+        }
+        .box-1{
+            background-color:rgb(255, 127, 81);
+            border: solid 5px rgb(247, 70, 6);
+            border-radius: 25%;
+        }
+        .box-2{
+            background-color: rgb(0, 183, 255);
+            border: dotted 5px rgb(0, 89, 255);
+            border-radius: 15%;
+        }
+        .box-3{
+            background-color: rgb(230, 193, 99);
+            border: dashed 5px rgb(161, 105, 1);
+            border-radius: 10%;
+        }
+        .box-4{
+            background-color: rgb(174, 108, 250);
+            border: solid 5px rgb(107, 27, 211);
+            border-radius: 5%;
+        }
+        img{
+            border: solid 5px black;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1"><p>border-radius: 25%;</p></div>
+    <hr>
+    <div class="box-2"><p>border-radius: 15%;</p></div>
+    <hr>
+    <div class="box-3"><p>border-radius: 10%;</p></div>
+    <hr>
+    <div class="box-4"><p>border-radius: 5%;</p></div>
+    <hr>
+    <img src="https://cdn.pixabay.com/photo/2016/04/27/20/13/wind-power-1357419__480.jpg" alt="error">
+
+</body>
+</html>
