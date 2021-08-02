@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24_border-radius</title>
+    <link rel="stylesheet" href="24_style.css">
+    
+    <style>
+        /* 
+        <th scope="col"><a href="../24_border-radius/24_index.html" target="_blank">24_border-radius</a></th>
+        */
+        div{
+            width: 250px;
+            height: 250px;
+            /* text-align: center;
+            margin: auto; */
+        }
+        .box-1{
+            background-color:rgb(255, 127, 81);
+            border-style: solid;
+            border-color: black;
+            border-width: thin;
+            /* border: solid 5px rgb(247, 70, 6); */
+            border-radius: 25%;
+        }
+        .box-2{
+            background-color: rgb(0, 183, 255);
+            border-style: double;
+            border-color: rgb(0, 89, 255);
+            border-width: medium;
+            /* border: dotted 5px rgb(0, 89, 255); */
+            border-radius: 15%;
+        }
+        .box-3{
+            background-color: rgb(230, 193, 99);
+            border-style: dotted;
+            border-color: rgb(161, 105, 1);
+            border-width: thick;
+            /* border: dashed 5px rgb(161, 105, 1); */
+            border-radius: 10%;
+        }
+        .box-4{
+            background-color: rgb(174, 108, 250);
+            border-style: dashed;
+            border-color: rgb(107, 27, 211);
+            border-width: 10px;
+            /* border: solid 5px rgb(107, 27, 211); */
+            border-radius: 5%;
+        }
+        .box-5{
+            background-color:rgb(255, 127, 81);
+            border-style: solid;
+            border-color: black;
+            border-width: thin;
+            /* border: solid 5px rgb(247, 70, 6); */
+            border-radius: 25% 15% 10% 5%;  /* top-left, top-right, bottom-right, bottom-left */
+            
+        }
+        .box-6{
+            background-color: rgb(0, 183, 255);
+            border-style: double;
+            border-color: rgb(0, 89, 255);
+            border-width: medium;
+            /* border: dotted 5px rgb(0, 89, 255); */
+            border-radius: 25% 10% 5%;  /* top-left, top-right & bottom-left, bottom-right */
+        }
+        .box-7{
+            background-color: rgb(230, 193, 99);
+            border-style: dotted;
+            border-color: rgb(161, 105, 1);
+            border-width: thick;
+            /* border: dashed 5px rgb(161, 105, 1); */
+            border-radius: 25% 10%;  /* top-left & bottom-right, top-right & bottom-left */
+        }
+        .box-8{
+            background-color: rgb(174, 108, 250);
+            border-style: dashed;
+            border-color: rgb(107, 27, 211);
+            border-width: 10px;
+            /* border: solid 5px rgb(107, 27, 211); */
+            border-radius: 15%; /* top-left & top-right & bottom-right & bottom-left */
+        }
+        img{
+            /* border: solid 5px black; */
+            border-top-style: solid;
+            border-top-color: rgb(247, 70, 6);
+            border-top-width: thin;
+            border-top-left-radius: 25%;
+            border-right-style: double;
+            border-right-color: rgb(247, 163, 6);
+            border-right-width: medium;
+            border-top-right-radius: 15%;
+            border-bottom: dotted thick rgb(6, 159, 247);
+            border-bottom-right-radius: 10%;
+            border-left: dashed 10px rgb(95, 71, 184);
+            border-bottom-left-radius: 5%;
+            /* border-radius: 40px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1"><p>border-radius: 25%;</p></div>
+    <hr>
+    <div class="box-2"><p>border-radius: 15%;</p></div>
+    <hr>
+    <div class="box-3"><p>border-radius: 10%;</p></div>
+    <hr>
+    <div class="box-4"><p>border-radius: 5%;</p></div>
+    <hr>
+    <img src="https://cdn.pixabay.com/photo/2016/04/27/20/13/wind-power-1357419__480.jpg" alt="error">
+    <div class="box-5"><p>border-radius: 25% 15% 10% 5%;</p></div>
+    <hr>
+    <div class="box-6"><p>border-radius: 25% 10% 5%;</p></div>
+    <hr>
+    <div class="box-7"><p>border-radius: 25% 10%;</p></div>
+    <hr>
+    <div class="box-8"><p>border-radius: 15%;</p></div>
+    <hr>
+
+</body>
+</html>
+</html>
