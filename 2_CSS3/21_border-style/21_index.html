@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21_border-style</title>
+    <link rel="stylesheet" href="21_style.css">
+    
+    <style>
+        /* 
+        <th scope="col"><a href="../21_border-style/21_index.html" target="_blank">21_border-style</a></th>
+        */
+        /*  
+        border-style        : solid, dotted, dashed
+        border-xxx-style    : xxx is side of line 
+                              top, left, bottom, right
+        */
+        div{
+            width: 200px;
+            height: 200px;
+            /* text-align: center;
+            margin: auto; */
+        }
+        .box-1{
+            background-color:rgb(255, 127, 81);
+            border-style: solid;
+            /* border: solid 5px rgb(247, 70, 6);
+            border-radius: 25%; */
+        }
+        .box-2{
+            background-color: rgb(0, 183, 255);
+            border-style: double;
+            /* border: dotted 5px rgb(0, 89, 255);
+            border-radius: 15%; */
+        }
+        .box-3{
+            background-color: rgb(230, 193, 99);
+            border-style: dotted;
+            /* border: dashed 5px rgb(161, 105, 1);
+            border-radius: 10%; */
+        }
+        .box-4{
+            background-color: rgb(174, 108, 250);
+            border-style: dashed;
+            /* border: solid 5px rgb(107, 27, 211);
+            border-radius: 5%; */
+        }
+        img{
+            /* border: solid 5px black; */
+            border-top-style: solid;
+            border-right-style: double;
+            border-bottom: dotted;
+            border-left: dashed;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1"><p>border-style: solid;</p></div>
+    <hr>
+    <div class="box-2"><p>border-style: double;</p></div>
+    <hr>
+    <div class="box-3"><p>border-style: dotted;</p></div>
+    <hr>
+    <div class="box-4"><p>border-style: dashed;</p></div>
+    <hr>
+    <img src="https://cdn.pixabay.com/photo/2016/04/27/20/13/wind-power-1357419__480.jpg" alt="error">
+
+</body>
+</html>
