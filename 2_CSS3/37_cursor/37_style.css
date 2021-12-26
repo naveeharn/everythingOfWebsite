@@ -1,0 +1,22 @@
+img{
+    width: 60%;
+    height: 60%;
+}
+div:hover{
+    border: 3px solid rgb(255, 214, 78);
+}
+div{
+    width: 50%;
+    /* height: 50%; */
+    position: relative;
+    /* left: 180px; */
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    background-color: rgb(53, 120, 245);
+    border: 3px solid rgb(0, 18, 177);
+    border-radius: 30px;
+    margin: 30px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+}
