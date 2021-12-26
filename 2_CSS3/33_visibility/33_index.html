@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33_visibility</title>
+    <link rel="stylesheet" href="33_style.css">
+    
+    <style>
+        /* 
+        <th scope="col"><a href="../33_visibility/33_index.html" target="_blank">33_visibility</a></th>
+        */
+        /*  
+        visibility : hidden, visible
+        */
+        div{
+            border: 1px dashed black;
+            max-width: max-content;
+        }
+        #image_1_hidden{
+            visibility: hidden;
+        }
+        #image_2_visible{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h2>default</h2>
+    <div>
+        <img id="image_1" src="assets/image_1.JPG" alt="" srcset="">
+        <img id="image_2" src="assets/image_2.JPG" alt="" srcset="">
+    </div>
+    <h2>visibility</h2>
+    <div>
+        <img id="image_1_hidden" src="assets/image_1.JPG" alt="" srcset="">
+        <img id="image_2_visible" src="assets/image_2.JPG" alt="" srcset="">
+    </div>
+</body>
+</html>
