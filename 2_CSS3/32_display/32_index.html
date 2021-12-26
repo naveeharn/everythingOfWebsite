@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32_display</title>
+    <link rel="stylesheet" href="32_style.css">
+
+    <style>
+        /* 
+        <th scope="col"><a href="../32_display/32_index.html" target="_blank">32_display</a></th>
+        */
+        /*  
+        display : none, block, inline, inline-block
+
+        warning : div tag used with display: block;
+        warning : span tag used with display: inline;
+        */
+        #ul-inline li {
+            display: inline;
+        }
+
+        #ul-block li {
+            display: block;
+        }
+
+        #ul-inline-block li {
+            display: inline-block;
+        }
+
+        li a {
+            padding-right: 24px;
+        }
+
+        a:link {
+            color: rgb(20, 99, 247);
+            text-decoration: none;
+        }
+
+        .box-block {
+            width: 30%;
+            box-sizing: border-box;
+            display: block;
+            /* padding: auto; */
+            padding-right: 24px;
+        }
+
+        .box-inline-block {
+            width: 30%;
+            box-sizing: border-box;
+            display: inline-block;
+            padding-right: 24px;
+        }
+
+        .box-block,
+        .box-inline-block {
+            background-color: #dddbdb;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>default</h2>
+    <ul id="ul-default">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <h2>block</h2>
+    <ul id="ul-block">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <h2>inline</h2>
+    <ul id="ul-inline">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <h2>inline-block</h2>
+    <ul id="ul-inline-block">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h2>inline</h2>
+    <ul id="ul-inline">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <h2>block</h2>
+    <div class="box-block">
+        <h2>Title box 1</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto laboriosam suscipit voluptas,
+            maiores, facere et, quis recusandae excepturi qui delectus aspernatur tempore. Tempora quae dolorum
+            accusantium! Pariatur cumque nulla autem!
+        </p>
+    </div>
+    <div class="box-block">
+        <h2>Title box 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint corrupti accusamus, quidem explicabo quae
+            error laborum reiciendis aut, deserunt iste numquam itaque modi natus magnam qui? Cumque autem vel
+            labore!
+        </p>
+    </div>
+    <div class="box-block">
+        <h2>Title box 3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aspernatur quam molestias voluptatum
+            sequi consectetur, ducimus dolorum, nostrum inventore quasi impedit ab perferendis harum id nam!
+            Reiciendis iste labore tempore.
+        </p>
+    </div>
+    <div class="box-block">
+        <h2>Title box 4</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium tempora commodi minus
+            possimus odio id, quos excepturi reprehenderit blanditiis culpa, ipsum deserunt, at aliquid suscipit
+            doloribus maxime eaque aperiam.
+        </p>
+    </div>
+    <div class="box-block">
+        <h2>Title box 5</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cupiditate quo doloribus ratione deserunt
+            eos atque tempora, veritatis commodi maiores, in aperiam reprehenderit magnam dolore distinctio dignissimos
+            libero sit quis.
+        </p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h2>inline</h2>
+    <ul id="ul-inline">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <h2>inline-block</h2>
+    <div class="box-inline-block">
+        <h2>Title box 1</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto laboriosam suscipit voluptas,
+            maiores, facere et, quis recusandae excepturi qui delectus aspernatur tempore. Tempora quae dolorum
+            accusantium! Pariatur cumque nulla autem!
+        </p>
+    </div>
+    <div class="box-inline-block">
+        <h2>Title box 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint corrupti accusamus, quidem explicabo quae
+            error laborum reiciendis aut, deserunt iste numquam itaque modi natus magnam qui? Cumque autem vel
+            labore!
+        </p>
+    </div>
+    <div class="box-inline-block">
+        <h2>Title box 3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aspernatur quam molestias voluptatum
+            sequi consectetur, ducimus dolorum, nostrum inventore quasi impedit ab perferendis harum id nam!
+            Reiciendis iste labore tempore.
+        </p>
+    </div>
+    <div class="box-inline-block">
+        <h2>Title box 4</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium tempora commodi minus
+            possimus odio id, quos excepturi reprehenderit blanditiis culpa, ipsum deserunt, at aliquid suscipit
+            doloribus maxime eaque aperiam.
+        </p>
+    </div>
+    <div class="box-inline-block">
+        <h2>Title box 5</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cupiditate quo doloribus ratione deserunt
+            eos atque tempora, veritatis commodi maiores, in aperiam reprehenderit magnam dolore distinctio dignissimos
+            libero sit quis.
+        </p>
+    </div>
+    <hr>
+
+</body>
+
+</html>
