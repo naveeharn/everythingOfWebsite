@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36_overflow</title>
+    <link rel="stylesheet" href="36_style.css">
+
+    <style>
+        /* 
+        <th scope="col"><a href="../36_overflow/36_index.html" target="_blank">36_overflow</a></th>
+        */
+        /*  
+        overflow attribute
+        visible(default), hidden, 
+        overflow : scroll
+        overflow-x : scroll
+        overflow-y : scroll
+        auto
+        */
+        div{
+            width: 300px;
+            height: 100px;
+            border: dotted 2px royalblue;
+        }
+        #visible{
+            overflow: visible;
+        }
+        #hidden{
+            overflow: hidden;
+        }
+        #scroll{
+            position: relative;
+            overflow: scroll;
+            left: 350px;
+        }
+        #overflow-x{
+            position: relative;
+            overflow-x: scroll;
+            left: 350px;
+        }
+        #overflow-y{
+            position: relative;
+            overflow-y: scroll;
+            left: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hidden">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam adipisci cum fuga non harum.
+            Officiis voluptatum beatae nostrum, quisquam recusandae obcaecati illo sequi voluptatibus necessitatibus?
+            Quia animi deserunt ea accusamus rerum sequi velit rem expedita officia id eveniet, doloribus nulla
+            quibusdam iure possimus non fugiat odit inventore eaque similique?
+        </p>
+    </div>
+    <br>
+    <div id="visible">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam adipisci cum fuga non harum.
+            Officiis voluptatum beatae nostrum, quisquam recusandae obcaecati illo sequi voluptatibus necessitatibus?
+            Quia animi deserunt ea accusamus rerum sequi velit rem expedita officia id eveniet, doloribus nulla
+            quibusdam iure possimus non fugiat odit inventore eaque similique?
+        </p>
+    </div>
+    <div id="scroll">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam adipisci cum fuga non harum.
+            Officiis voluptatum beatae nostrum, quisquam recusandae obcaecati illo sequi voluptatibus necessitatibus?
+            Quia animi deserunt ea accusamus rerum sequi velit rem expedita officia id eveniet, doloribus nulla
+            quibusdam iure possimus non fugiat odit inventore eaque similique?
+        </p>
+    </div>
+    <br>
+    <div id="overflow-x">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam adipisci cum fuga non harum.
+            Officiis voluptatum beatae nostrum, quisquam recusandae obcaecati illo sequi voluptatibus necessitatibus?
+            Quia animi deserunt ea accusamus rerum sequi velit rem expedita officia id eveniet, doloribus nulla
+            quibusdam iure possimus non fugiat odit inventore eaque similique?
+        </p>
+    </div>
+    <br>
+    <div id="overflow-y">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam adipisci cum fuga non harum.
+            Officiis voluptatum beatae nostrum, quisquam recusandae obcaecati illo sequi voluptatibus necessitatibus?
+            Quia animi deserunt ea accusamus rerum sequi velit rem expedita officia id eveniet, doloribus nulla
+            quibusdam iure possimus non fugiat odit inventore eaque similique?
+        </p>
+    </div>
+</body>
+
+</html>
