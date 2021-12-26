@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34_position</title>
+    <link rel="stylesheet" href="34_style.css">
+    
+    <style>
+        /* 
+        <th scope="col"><a href="../34_position/34_index.html" target="_blank">34_position</a></th>
+        */
+        /*  
+        position attribute
+        position : static (default), relative, absolute, fixed, sticky (used for ads)
+        */
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            height: 5000px;
+        }
+        li{
+            display: inline;
+            margin-right: 24px;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+        }
+        .box-static{
+            position: static;
+        } 
+        .box-relative{
+            position: relative;
+        }
+        .box-absolute{
+            position: absolute;
+        }
+        .box-fixed{
+            position: fixed;
+        }
+        .box-sticky{
+            position: sticky;
+            top: 0px;
+        }
+        #box-static-1, #box-relative-1, #box-absolute-1, #box-fixed-1, #box-sticky-1{
+            background-color: #8da5ec;
+        }
+        #box-static-2, #box-relative-2, #box-absolute-2, #box-fixed-2, #box-sticky-2{
+            background-color: #597ce3;
+        }
+        #box-static-3, #box-relative-3, #box-absolute-3, #box-fixed-3, #box-sticky-3{
+            background-color: #2552da;
+        }
+        #box-static-4, #box-relative-4, #box-absolute-4, #box-fixed-4, #box-sticky-4{
+            background-color: #1c3fa6;
+        }
+        #box-static-5, #box-relative-5, #box-absolute-5, #box-fixed-5, #box-sticky-5{
+            background-color: #132b71;
+        }
+
+        #box-relative-1{
+            left: 50px;
+        }
+        #box-relative-2{
+            left: 50px;
+            top: 50px;
+        }
+
+        .container{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: #35acf1;
+        }
+        #box-absolute-1{
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+        #box-absolute-3{
+            top: 160px;
+        }
+        #box-absolute-4{
+            top: 160px;
+            right: -50px;
+        }
+
+        #box-fixed-3{
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#box-fixed-1">box-fixed</a></li>
+        <li><a href="#box-static-1">box-static-1</a></li>
+        <li><a href="#box-relative-1">box-relative-1</a></li>
+        <li><a href="#box-absolute-1">box-absolute-1</a></li>
+        <li><a href="#box-sticky-1">box-sticky-1</a></li>
+    </ul>
+    <h2>box-fixed</h2>
+    <div id="box-fixed-1" class="box-static"></div>
+    <div id="box-fixed-2" class="box-static"></div>
+    <div id="box-fixed-3" class="box-fixed"></div>
+    <div id="box-fixed-4" class="box-static"></div>
+    <div id="box-fixed-5" class="box-static"></div>
+    <h2>box-static (default)</h2>
+    <div id="box-static-1" class="box-static"></div>
+    <div id="box-static-2" class="box-static"></div>
+    <div id="box-static-3" class="box-static"></div>
+    <div id="box-static-4" class="box-static"></div>
+    <div id="box-static-5" class="box-static"></div>
+    <h2>box-relative</h2>
+    <div id="box-relative-1" class="box-relative"></div>
+    <div id="box-relative-2" class="box-relative"></div>
+    <div id="box-relative-3" class="box-relative"></div>
+    <div id="box-relative-4" class="box-relative"></div>
+    <div id="box-relative-5" class="box-relative"></div>
+    <h2>box-absolute</h2>
+    <div id="box-absolute-1" class="box-relative"></div>
+    <div class="container">
+        <div id="box-absolute-2" class="box-absolute"></div>
+        <div id="box-absolute-3" class="box-absolute"></div>
+        <div id="box-absolute-4" class="box-absolute"></div>
+    </div>
+    <div id="box-absolute-5" class="box-relative"></div>
+    <h2>box-sticky</h2>
+    <div id="box-sticky-1" class="box-sticky"></div>
+    <div id="box-sticky-2" class="box-sticky"></div>
+    <div id="box-sticky-3" class="box-static"></div>
+    <div id="box-sticky-4" class="box-static"></div>
+    <div id="box-sticky-5" class="box-static"></div>
+</body>
+</html>
