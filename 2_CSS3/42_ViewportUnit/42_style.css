@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+header{
+    color: white;
+    background-color: rgb(75, 75, 75);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 12rem;
+} 
+header h1{
+    font-size: 3rem;
+}
+header p{
+    margin: 1rem 0%;
+}
+header a{
+    color: rgb(252, 92, 92);
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: rgb(59, 59, 59);
+    padding: 0.75rem 2rem;
+}
