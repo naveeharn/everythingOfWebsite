@@ -1,0 +1,21 @@
+.item{
+    padding: 3rem;
+    border: 2.5px solid white;
+    background-color: rgb(129, 183, 245);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 
+    display: grid
+    grid-template-rows: (height)
+    grid-template-column: (width)
+*/
+
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: 200px auto 200px;
+    
+} 
