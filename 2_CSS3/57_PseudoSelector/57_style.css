@@ -1,0 +1,55 @@
+li{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    list-style: none;
+}
+
+/*  
+pseudo selector
+first-child
+last-child
+nth-child
+*/
+
+li:first-child{
+    background-color: rgb(24, 97, 255);
+}
+
+li:nth-child(2){
+    color: rgb(24, 97, 255);
+}
+
+li:nth-child(4),li:nth-child(5){
+    color: rgb(130, 26, 248);
+}
+
+/*   */
+
+li:nth-last-child(4),li:nth-last-child(5){
+    color: rgb(250, 103, 255);
+}
+
+li:nth-last-child(2){
+    color: rgb(172, 141, 7);
+}
+
+li:last-child{
+    color: white;
+    background-color: rgb(3, 30, 90);
+}
+
+/*  */
+
+li:nth-child(6n){
+    color: white;
+    background-color: darkorange;
+}
+
+li:nth-child(7n+3){
+    color: white;
+    background-color: rgb(3, 161, 189);
+}
+
+li:nth-child(even){
+    text-decoration: underline black;
+}
