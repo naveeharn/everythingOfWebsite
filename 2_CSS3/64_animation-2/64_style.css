@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(122, 161, 245);
+}
+/* 
+alternate : from <-> to
+*/
+.box {
+    background-color: rgb(36, 100, 240);
+    width: 250px;
+    height: 250px;
+    position: relative;
+    /* animation-name: animate-2;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate; */
+    animation: animate-2 5s ease-in-out 0.1s 2 alternate;
+}
+
+@keyframes animate-2 {
+
+    0%{
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    25%{
+        top: 0;
+        left: 500px;
+        transform: rotate(90deg);
+    }
+
+    50%{
+        top: 500px;
+        left: 500px;
+        transform: rotate(180deg);
+    }
+
+    75%{
+        top: 500px;
+        left: 0;
+        transform: rotate(270deg);
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+        transform: rotate(360deg);
+    }
+
+
+    /* from {
+        width: 250px;
+        height: 250px;
+    }
+
+    to{
+        width: 250px;
+        height: 250px;
+    } */
+    
+}
+
