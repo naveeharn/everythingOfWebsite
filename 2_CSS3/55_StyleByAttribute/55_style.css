@@ -1,0 +1,18 @@
+a{
+    background-color: rgb(230, 197, 50);
+}
+
+a[target]{
+    background-color: red;
+    color: white;
+}
+
+a[target = '_blank']{
+    background-color: rgb(253, 147, 147);
+    color: white;
+}
+
+a[target = '_self']{
+    /* background-color: rgb(253, 146, 75); */
+    color: black;
+}
