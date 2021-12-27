@@ -1,0 +1,26 @@
+.item{
+    padding: 3rem;
+    border: 2.5px solid white;
+    background-color: rgb(129, 183, 245);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 
+    display: grid
+    grid-template-rows: (height)
+    grid-template-column: (width)
+*/
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 2fr repeat(3,1fr) 2fr;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: 1fr 1fr 2fr; /* 1:1:2 ratio */
+
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+} 
+
