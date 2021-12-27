@@ -1,0 +1,20 @@
+
+/* descendant selector */
+div p{
+    color: rgb(0, 132, 255);
+}
+
+/* child selector */
+/* div ul li p{
+    color: rgb(38, 62, 105);
+} */
+
+/* or */
+div > p{
+    color: rgb(38, 62, 105);
+}
+
+/* normal selector */
+p{
+    color: blueviolet;
+}
