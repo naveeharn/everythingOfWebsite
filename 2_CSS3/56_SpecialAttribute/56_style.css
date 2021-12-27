@@ -1,0 +1,15 @@
+
+input[type="email"],input[type="text"]{
+    width: 25vw;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 35px;
+}
+
+input[type="submit"]{
+    width: 10vw;
+    background-color: rgb(169, 253, 136);
+    padding: 1%;
+    border: 2px solid rgb(6, 105, 13);
+    border-radius: 35px;
+}
