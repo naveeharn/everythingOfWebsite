@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+/*  
+    flex-direction: row, column, row-reverse, column-reverse
+    flex-wrap: nowrap(default), wrap, wrap-reverse
+*/
+
+.flex-container {
+    display: flex;
+    background-color: rgb(142, 199, 253);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: rgb(77, 138, 250);
+    border: 3px solid blue;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+}
