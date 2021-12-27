@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(122, 161, 245);
+}
+/* 
+alternate : from <-> to
+*/
+.box {
+    background-color: rgb(36, 100, 240);
+    width: 250px;
+    height: 250px;
+    animation-name: animate-1;
+    animation-duration: 1s;
+    animation-iteration-count: 8;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes animate-1 {
+
+    from {
+        width: 250px;
+        height: 250px;
+    }
+
+    to{
+        width: 500px;
+    }
+    
+}
