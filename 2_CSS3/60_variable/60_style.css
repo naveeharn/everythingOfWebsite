@@ -1,0 +1,29 @@
+/* global variable , local variable */
+
+
+:root{
+    --box-border: 4px solid rgb(92, 90, 90);
+    --box-margin: 10px;
+    --theme-color: rgba(148, 198, 255, 0.781);
+    --shadow: 4px 4px 10px rgba(0, 0, 0, 0.568);
+}
+
+body{
+    background-color: var(--theme-color);
+}
+
+.box-1{
+    border: var(--box-border);
+    margin-bottom: var(--box-margin);
+    text-shadow: var(--shadow);
+}
+.box-2{
+    border: var(--box-border);
+    margin-bottom: var(--box-margin);
+    text-shadow: var(--shadow);
+}
+.box-3{
+    border: var(--box-border);
+    margin-bottom: var(--box-margin);
+    text-shadow: var(--shadow);
+}
