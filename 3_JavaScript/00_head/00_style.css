@@ -1,0 +1,18 @@
+.grid-container{
+    display: grid;
+    /* box-sizing: border-box; */
+    grid-template-columns: repeat(5,19vw);
+    grid-template-rows: repeat(10,1fr);
+    grid-gap: 5px;
+}
+
+.item{
+    /* width: 20vw; */
+    /* height: 5vh; */
+    padding: 2rem;
+    border: 2.5px solid white;
+    background-color: rgb(129, 183, 245);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
