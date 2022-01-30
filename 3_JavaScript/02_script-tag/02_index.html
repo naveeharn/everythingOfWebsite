@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_script-tag</title>
+    <link rel="stylesheet" href="02_style.css">
+    <style>
+        /* 
+        <div class="item"><a href="../02_script-tag/02_index.html" target="_blank">02_script-tag</a></div>
+        */
+        /*  
+        internal file : used script tag in head tag or body tag
+        external file : script.js
+        */
+    </style>
+    <!-- internal file -->
+    <script type="text/javascript">
+        document.write("head tag");
+        document.write("<h1><i>JavaScript : internal file</i></h1>");
+    </script> 
+    <!-- external file -->
+    <script src="02_script.js"></script>
+<body>
+    <h1>02 Script Tag</h1>
+    <script type="text/javascript">
+        document.write("body tag");
+        document.write("<h1><i>JavaScript : internal file</i></h1>");
+    </script> 
+</body>
+</html>
