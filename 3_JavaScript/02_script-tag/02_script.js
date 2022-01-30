@@ -1,0 +1,1 @@
+document.write("<h1><i>JavaScript : external file</i></h1>");
