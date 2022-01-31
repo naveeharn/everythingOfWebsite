@@ -1,0 +1,6 @@
+console.log("1+2=",1+2)
+console.log("3-4=",3-4)
+console.log("5*6=",5*6)
+console.log("8/2=",8/2)
+console.log("112%44=",112%44)
+console.log("4**4=",4**4)
