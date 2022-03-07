@@ -1,0 +1,14 @@
+.kuay{
+    color: rgb(241, 241, 241);
+    background-color: rgb(49, 104, 255);
+}
+
+.light{
+    color: black;
+    background-color: rgb(255, 191, 53);
+}
+
+.dark{
+    color: aliceblue;
+    background-color: black;
+}
