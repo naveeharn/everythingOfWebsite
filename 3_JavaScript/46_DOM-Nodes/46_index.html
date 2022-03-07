@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>46_DOM-Nodes</title>
+    <link rel="stylesheet" href="46_style.css">
+    <style>
+        /* 
+        <div class="item"><a href="../46_DOM-Nodes/46_index.html" target="_blank">46_DOM-Nodes</a></div>
+        */
+        /* 
+        DOM Nodes
+        document.createElement(element)
+        document.removeChild(element)
+        document.appendChild(element)
+        document.replaceChild(new,old)
+        */
+    </style>
+</head>
+
+<body>
+    <p>Hello World</p>
+    <p>JavaScript</p>
+    <p>HTML</p>
+    <ul id="menu">
+        <li id="item-1">Item 1</li>
+        <li id="item-2">Item 2</li>
+        <li id="item-3">Item 3</li>
+        <li id="item-4">Item 4</li>
+    </ul>
+    <button id='addListButton' onclick="addListButton()">add list</button>
+    <button id='removeListButton' onclick="removeListButton()">remove list</button>
+    <button id='replaceListButton' onclick="replaceListButton()">remove list</button>
+
+    <!--  -->
+    <script src="46_script.js"></script>
+</body>
+
+</html>
