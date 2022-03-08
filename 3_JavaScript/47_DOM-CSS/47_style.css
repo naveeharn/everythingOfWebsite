@@ -1,0 +1,14 @@
+.darkTheme{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+}
+.lightTheme{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    margin: 10px;
+}
