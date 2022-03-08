@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>48_DOM-Event</title>
+    <link rel="stylesheet" href="48_style.css">
+    <style>
+        /* 
+        <div class="item"><a href="../48_DOM-Event/48_index.html" target="_blank">48_DOM-Event</a></div>
+        */
+        /* 
+        DOM Event
+
+        Event name      used work with tag
+
+        onfocus=""      select, text, textarea
+        onblur=""       select, text, textarea
+        onchange=""     select, text, textarea
+        onselect=""     text, textarea
+        onsubmit=""     form
+        onMouseover=""  a,div
+        onMouseout=""   a,div
+        onclick=""      a, button, checkbox, radio, reset, submit
+        onload=""       body
+        onunload=""     body
+
+        */
+    </style>
+</head>
+
+<body onload="welcome()">
+    <p id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam sit delectus nemo? Esse adipisci rem
+        maiores sapiente asperiores. Minima tenetur voluptatibus repudiandae assumenda blanditiis rerum odit officia
+        quam laudantium!
+    </p>
+    <label for="">Name</label>
+    <input type="text" placeholder="enter your name" onfocus="highlight(this)" onblur="unhighlight(this)">
+    <hr>
+    <textarea name="" id="" cols="30" rows="3" onfocus="highlight(this)" onblur="unhighlight(this)"></textarea>
+    <hr>
+    <label for="">Choose language code</label>
+    <select name="" id="menu" onchange="getMenu()">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Bootstrap">Bootstrap</option>
+    </select>
+    <p id="display"></p>
+    <a href="#" onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)"> Menu 1 onMouseOver </a>
+    <a href="#" onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)"> Menu 2 onMouseOut </a>
+    <script src="48_script.js"></script>
+</body>
+
+</html>
