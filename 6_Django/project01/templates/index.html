@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>Homepage</h1>
+<p>Welcome</p>
+<h2>Django Framework</h2>
+<h4 align="center">article</h4>
+<div>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">article name</th>
+                <th scope="col">description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for post in posts %}
+            <tr>
+                <td>{{post.id}}</td>
+                <td>{{post.name}}</td>
+                <td>{{post.desc}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div>
+    <span style="color: blue;">{{name}} </span>
+    <span>by</span>
+    <span style="color: darkgoldenrod;">{{auther}}</span>
+</div>
+<div>
+    <p>aritcle name : {{name}}</p>
+    <p>auther : {{auther}}</p>
+</div>
+<div>
+    <p>tag :</p>
+    {% for tag in tags %}
+    <ul>
+        <li style="color: crimson;">{{tag}}</li>
+    </ul>
+    {% endfor %}
+</div>
+<div>
+    <span>
+        rating this acticle :
+        {% if rating > 3 %}
+        popular
+        {% else %}
+        not popular
+        {% endif %}
+    </span>
+</div>
+
+{% endblock %}
