@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>Sign Up New Account</h1>
+<hr>
+
+{% if messages %}
+<div class="alert alert-danger" role="alert">
+    {% for message in messages %} 
+    <h3 style="color: firebrick;">{{message}}</h3>
+    {% endfor %}
+</div>
+{% endif %}
+
+
+<form action="add_user" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="">username</label>
+        <input type="text" name='username' class="form-control">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">firstname</label>
+        <input type="text" name="firstname" class="form-control">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">lastname</label>
+        <input type="text" name="lastname" class="form-control">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">email</label>
+        <input type="email" name="email" class="form-control">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">password</label>
+        <input type="password" name="password" class="form-control">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">re-password</label>
+        <input type="password" name="repassword" class="form-control">
+    </div>
+    <hr>
+    <br>
+    <input class="btn-primary" type="submit" value="Confrim">
+</form>
+
+{% endblock %}
