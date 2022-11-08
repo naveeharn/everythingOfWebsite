@@ -1,0 +1,39 @@
+.form-container {
+    padding: 1rem;
+    background-color: rgb(190, 226, 248);
+    border-radius: 1.5rem;
+}
+
+/* .form-control {
+    background-color: rgb(190, 226, 248);
+} */
+
+label {
+    display: inline-block;
+    margin: 0.5rem 0.5rem;
+}
+
+input {
+    border-style: solid;
+    border-radius: 2rem;
+    display: block;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    width: 90%;
+}
+input:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: rgb(47, 130, 255);
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 1rem 0 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    width: 90%;
+    border-radius: 2rem;
+}
