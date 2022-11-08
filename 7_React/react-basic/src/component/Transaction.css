@@ -1,0 +1,16 @@
+.item-list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 3.5rem;
+    background-color: blanchedalmond;
+    /* text-align: center; */
+}
+
+.item-list li{
+    background: lightcoral;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    padding: 1.25rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
